@@ -1,0 +1,35 @@
+/* styles/Home.module.css */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black; /* Fallback color */
+  }
+  
+  .videoContainer {
+    position: relative;
+    width: 800px; /* Match the width of the canvas */
+    height: 600px; /* Match the height of the canvas */
+    overflow: hidden; /* Ensure video does not overflow */
+  }
+  
+  .backgroundVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the video covers the container */
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Ensure video stays behind other content */
+  }
+  
+  .canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Ensure canvas stays above the video */
+    border:1px solid red;
+  }
+  
